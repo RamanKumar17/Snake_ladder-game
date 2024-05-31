@@ -1,0 +1,166 @@
+body{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    row-gap: 0.5rem;
+    background: pink;
+
+}
+img{
+    width: 2rem;
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+td,th{
+    padding: 0.3rem ;
+}
+tr,th,td{
+    border: 1px solid black;
+}
+#displayWinner{
+    margin-top: 0.7rem;
+    display: none;
+}
+.button{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+#button{
+    padding: 0.6rem 0.6rem;
+    border-radius: 0.8rem;
+    font-weight: 600;
+    background-color: wheat;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow */
+}
+#button:hover{
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Change box shadow on hover */
+}
+#button:active{
+    transform: scale(0.98);
+}
+.info{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    /* border: 1px solid black; */
+}
+.partition-1{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: ; */
+    row-gap: 0.3rem;
+}
+.fa-location-dot{
+    color:red;
+    /* background-color: white; */
+}
+.userOne{
+    width: 50%;
+    display: flex;
+    column-gap: 0.5rem;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.userTwo{
+    width: 50%;
+    display: flex;
+    column-gap: 0.5rem;
+    justify-content: flex-end;
+}
+#turn-two{
+    display: none;
+}
+.partition-2{
+    display: flex;
+    justify-content: center;
+    column-gap: 0.1rem;
+}
+#displayUser{
+    font-weight: bold;
+}
+.game-board{
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: repeat(10,1fr);
+    grid-template-columns: repeat(10,1fr);
+    border: 5px solid black;
+    background: url(../Images/Snake-ladder2.jpeg); 
+    background-size: cover;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.fa-person-military-rifle{
+    position: absolute; /* Position the user icon relative to the box */
+    top: 50%; /* Position it in the middle vertically */
+    left: 50%; /* Position it in the middle horizontally */
+    transform: translate(-50%, -50%); /* Center it precisely */
+    font-size: 1rem;
+}
+#user2{
+    position: absolute; /* Position the user icon relative to the box */
+    top: 50%; /* Position it in the middle vertically */
+    left: 50%; /* Position it in the middle horizontally */
+    transform: translate(-50%, -50%); /* Center it precisely */
+    font-size: 1rem;
+}
+.bar{
+    width: 300px;
+    display: grid;
+    padding: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-rows: repeat(1,fr);
+    grid-template-columns: repeat(3,100px);
+    /* border: 1px solid black; */
+}
+.dice{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    /* border: 1px solid black; */
+}
+.dice:hover{
+    cursor: pointer;
+}
+.dice:active{
+    transform: scale(0.95);
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    /* border: 1px solid black; */
+}
+.result{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+#number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 3px solid black;
+    font-weight: 900;
+    font-size: 2rem;
+}

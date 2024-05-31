@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://kit.fontawesome.com/89b4466aff.js"
+    crossorigin="anonymous"
+  ></script>
+    <title>Snake ladder</title>
+    <link rel="stylesheet" href="./GameStyle.css">
+</head>
+<body>
+
+    <div class="game-board">
+        <!-- row- one -->
+        <div class="box rowOne r1-c1">
+            <div class="num"></div>
+        </div>
+        <div class="box rowOne r1-c2">
+            <div class="num"></div>
+        </div>
+        <div class="box rowOne r1-c3">
+            <div class="num"></div>
+        </div>
+        <div class="box rowOne r1-c4">
+            <div class="num"></div>
+        </div>
+        <div class="box rowOne r1-c5">
+            <div class="num"></div>
+        </div>
+        <div class="box rowOne r1-c6">
+            <div class="num"></div>
+        </div>
+        <div class="box rowOne r1-c7">
+            <div class="num"></div>
+        </div>
+        <div class="box rowOne r1-c8">
+            <div class="num"></div>
+        </div>
+        <div class="box rowOne r1-c9">
+            <div class="num"></div>
+        </div>
+        <div class="box rowOne r1-c10">
+            <div class="num"></div>
+        </div>
+        <!-- row-two -->
+        <div class="box rowTwo r2-c1">
+            <div class="num"></div>
+        </div>
+        <div class="box rowTwo r2-c2">
+            <div class="num"></div>
+        </div>
+        <div class="box rowTwo r2-c3">
+            <div class="num"></div>
+        </div>
+        <div class="box rowTwo r2-c4">
+            <div class="num"></div>
+        </div>
+        <div class="box rowTwo r2-c5">
+            <div class="num"></div>
+        </div>
+        <div class="box rowTwo r2-c6">
+            <div class="num"></div>
+        </div>
+        <div class="box rowTwo r2-c7">
+            <div class="num"></div>
+        </div>
+        <div class="box rowTwo r2-c8">
+            <div class="num"></div>
+        </div>
+        <div class="box rowTwo r2-c9">
+            <div class="num"></div>
+        </div>
+        <div class="box rowTwo r2-c10">
+            <div class="num"></div>
+        </div>
+        <!-- row-three -->
+        <div class="box rowThree r3-c1">
+            <div class="num"></div>
+        </div>
+        <div class="box rowThree r3-c2">
+            <div class="num"></div>
+        </div>
+        <div class="box rowThree r3-c3">
+            <div class="num"></div>
+        </div>
+        <div class="box rowThree r3-c4">
+            <div class="num"></div>
+        </div>
+        <div class="box rowThree r3-c5">
+            <div class="num"></div>
+        </div>
+        <div class="box rowThree r3-c6">
+            <div class="num"></div>
+        </div>
+        <div class="box rowThree r3-c7">
+            <div class="num"></div>
+        </div>
+        <div class="box rowThree r3-c8">
+            <div class="num"></div>
+        </div>
+        <div class="box rowThree r3-c9">
+            <div class="num"></div>
+        </div>
+        <div class="box rowThree r3-c10">
+            <div class="num"></div>
+        </div>
+        <!-- row-four -->
+        <div class="box rowFour r4-c1">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFour r4-c2">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFour r4-c3">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFour r4-c4">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFour r4-c5">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFour r4-c6">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFour r4-c7">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFour r4-c8">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFour r4-c9">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFour r4-c10">
+            <div class="num"></div>
+        </div>
+        <!-- row-five  -->
+        <div class="box rowFive r5-c1">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFive r5-c2">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFive r5-c3">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFive r5-c4">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFive r5-c5">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFive r5-c6">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFive r5-c7">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFive r5-c8">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFive r5-c9">
+            <div class="num"></div>
+        </div>
+        <div class="box rowFive r5-c10">
+            <div class="num"></div>
+        </div>
+        <!-- row-six  -->
+        <div class="box rowSix r6-c1">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSix r6-c2">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSix r6-c3">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSix r6-c4">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSix r6-c5">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSix r6-c6">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSix r6-c7">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSix r6-c8">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSix r6-c9">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSix r6-c10">
+            <div class="num"></div>
+        </div>
+        <!-- row-seven -->
+        <div class="box rowSeven r7-c1">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSeven r7-c2">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSeven r7-c3">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSeven r7-c4">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSeven r7-c5">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSeven r7-c6">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSeven r7-c7">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSeven r7-c8">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSeven r7-c9">
+            <div class="num"></div>
+        </div>
+        <div class="box rowSeven r7-c10">
+            <div class="num"></div>
+        </div>
+        <!-- row-eight -->
+        <div class="box rowEight r8-c1">
+            <div class="num"></div>
+        </div>
+        <div class="box rowEight r8-c2">
+            <div class="num"></div>
+        </div>
+        <div class="box rowEight r8-c3">
+            <div class="num"></div>
+        </div>
+        <div class="box rowEight r8-c4">
+            <div class="num"></div>
+        </div>
+        <div class="box rowEight r8-c5">
+            <div class="num"></div>
+        </div>
+        <div class="box rowEight r8-c6">
+            <div class="num"></div>
+        </div>
+        <div class="box rowEight r8-c7">
+            <div class="num"></div>
+        </div>
+        <div class="box rowEight r8-c8">
+            <div class="num"></div>
+        </div>
+        <div class="box rowEight r8-c9">
+            <div class="num"></div>
+        </div>
+        <div class="box rowEight r8-c10">
+            <div class="num"></div>
+        </div>
+        <!-- row-nine  -->
+        <div class="box rowNine r9-c1">
+            <div class="num"></div>
+        </div>
+        <div class="box rowNine r9-c2">
+            <div class="num"></div>
+        </div>
+        <div class="box rowNine r9-c3">
+            <div class="num"></div>
+        </div>
+        <div class="box rowNine r9-c4">
+            <div class="num"></div>
+        </div>
+        <div class="box rowNine r9-c5">
+            <div class="num"></div>
+        </div>
+        <div class="box rowNine r9-c6">
+            <div class="num"></div>
+        </div>
+        <div class="box rowNine r9-c7">
+            <div class="num"></div>
+        </div>
+        <div class="box rowNine r9-c8">
+            <div class="num"></div>
+        </div>
+        <div class="box rowNine r9-c9">
+            <div class="num"></div>
+        </div>
+        <div class="box rowNine r9-c10">
+            <div class="num"></div>
+        </div>
+        <!-- row-ten  -->
+        <div class="box rowTen r10-c1">
+            <i class="fa-solid fa-person-military-rifle" id="user1"></i>
+            <i class="fa-solid fa-user" id="user2"></i>
+            <div class="num"></div>
+        </div>
+        <div class="box rowTen r10-c2">
+            <div class="num"></div>
+        </div>
+        <div class="box rowTen r10-c3">
+            <i></i>
+            <div class="num"></div>
+        </div>
+        <div class="box rowTen r10-c4">
+            <i></i>
+            <div class="num"></div>
+        </div>
+        <div class="box rowTen r10-c5">
+            <div class="num"></div>
+        </div>
+        <div class="box rowTen r10-c6">
+            <div class="num"></div>
+        </div>
+        <div class="box rowTen r10-c7">
+            <div class="num"></div>
+        </div>
+        <div class="box rowTen r10-c8">
+            <div class="num"></div>
+        </div>
+        <div class="box rowTen r10-c9">
+            <div class="num"></div>
+        </div>
+        <div class="box rowTen r10-c10">
+            <div class="num"></div>
+        </div>
+    </div>
+        <!-- user details  -->
+        <div class="info">
+
+            <div class="partition-1">
+
+                <div class="userOne">
+                    <div class="One"><i class="fa-solid fa-person-rifle"></i></div>
+                    <div id="player1name"></div>
+                    <div id="turn-one"><i class="fa-solid fa-location-dot"></i></div>
+                </div>
+
+                <div class="userTwo">
+                    <div id="turn-two"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="One"><i class="fa-solid fa-user-large"></i></div>
+                    <div id="player2name"></div>
+                </div>
+
+            </div>
+
+            <div class="partition-2">
+                Player's Turn: <div id="displayUser">User1</div>
+            </div>
+
+        </div>
+
+    <!-- the bar at the bottom of the board  -->
+    <div class="bar">
+        <!-- the dice  -->
+        <div class="dice" onclick="showOutput()">
+            <i class="fa-solid fa-dice-six"></i>
+        </div>
+        <!-- the arrow  -->
+        <div class="arrow">
+            <i class="fa-solid fa-circle-right"></i>
+        </div>
+        <!-- the result after clicking the dice  -->
+        <div class="result">
+            <div id="number"></div>
+        </div>
+    </div>
+    <div class="button">
+        <div id="button" onclick="winnerList()">Head to Head</div>
+    </div>
+    <div id="displayWinner">
+        <table>
+            <tr>
+                <th>Username</th>
+                <th>Matches_Won</th>
+            </tr>
+            <tr>
+                <td><strong id="listUser1"></strong></td>
+                <td id="games-won-by-user1"></td>
+            </tr>
+            <tr>
+                <td><strong id="listUser2"></strong></td>
+                <td id="games-won-by-user2"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="./GameScript.js"></script>
+</html>
